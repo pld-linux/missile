@@ -1,12 +1,12 @@
 Summary:	A clone of the Atari Missile Command
 Summary(pl):	Klon atarowskiej gry Missile Command
 Name:		missile
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://missile.sourceforge.net/dl/%{name}-%{version}.tar.gz
-# Source0-md5:	df91618f5ea46e5c9e8a395273b85e01
+# Source0-md5:	a4a429dc74efff08ab555c792957fe4a
 URL:		http://missile.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
