@@ -33,7 +33,7 @@ install missile $RPM_BUILD_ROOT%{_bindir}
 mv data/{graphics,sound} $RPM_BUILD_ROOT%{_datadir}/missile
 install data/missile_icon.png $RPM_BUILD_ROOT%{_datadir}/missile
 install icons/* $RPM_BUILD_ROOT%{_pixmapsdir}
-install missile.desktop $RPM_BUILD_ROOT%{_applnkdir}/Games/Arcade
+install missile.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -44,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/missile
 %{_pixmapsdir}/*
-%{_applnkdir}/Games/Arcade/*
+%{_desktopdir}/*
