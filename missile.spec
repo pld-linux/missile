@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://missile.sourceforge.net/dl/%{name}-%{version}.tar.gz
+# Source0-md5:	df91618f5ea46e5c9e8a395273b85e01
 URL:		http://missile.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
