@@ -27,7 +27,7 @@ Klon atarowskiej gry Missile Command.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/missile,%{_pixmapsdir},%{_applnkdir}/Games/Arcade}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/missile,%{_pixmapsdir},%{_desktopdir}}
 
 install missile $RPM_BUILD_ROOT%{_bindir}
 mv data/{graphics,sound} $RPM_BUILD_ROOT%{_datadir}/missile
