@@ -11,7 +11,6 @@ BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 A clone of the Atari Missile Command.
