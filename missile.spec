@@ -35,14 +35,12 @@ ln -s %{_datadir}/missile $RPM_BUILD_ROOT%{_pixmapsdir}/missile
 install icons/* $RPM_BUILD_ROOT%{_pixmapsdir}
 install missile.desktop $RPM_BUILD_ROOT%{_applnkdir}/Games/Arcade
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_pixmapsdir}/*
