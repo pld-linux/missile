@@ -8,6 +8,7 @@ Group:		X11/Applications/Games
 Source0:	http://missile.sourceforge.net/dl/%{name}-%{version}.tar.gz
 # Source0-md5:	a4a429dc74efff08ab555c792957fe4a
 URL:		http://missile.sourceforge.net/
+Patch0:		%{name}-ldflags.patch
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_mixer-devel
@@ -21,10 +22,13 @@ Klon atarowskiej gry Missile Command.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
 	CC="%{__cc}" \
+	RPM_OPT_FLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}" \
 	game_prefix=%{_prefix}
 
 %install
