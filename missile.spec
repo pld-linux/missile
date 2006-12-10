@@ -23,7 +23,9 @@ Klon atarowskiej gry Missile Command.
 %setup -q
 
 %build
-%{__make} game_prefix=%{_prefix}
+%{__make} \
+	CC="%{__cc}" \
+	game_prefix=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
