@@ -1,0 +1,11 @@
+--- missile-1.0.1.orig/Makefile	2006-12-10 16:02:39.000000000 +0100
++++ missile-1.0.1/Makefile	2006-12-10 16:42:38.000000000 +0100
+@@ -125,7 +125,7 @@
+ 	fi
+ 
+ $(PROGRAM):	$(OBJECTS)
+-	$(CC) -o $(PROGRAM) $(OBJECTS) $(CFLAGS) $(LIBS)
++	$(CC) $(CFLAGS) $(LDFLAGS) -o $(PROGRAM) $(OBJECTS) $(LIBS)
+ 
+ static : $(OBJECTS)
+ 	$(CC) -o $(PROGRAM) $(OBJECTS) $(CFLAGS) $(STATIC_LIBS)
