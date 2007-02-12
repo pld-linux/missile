@@ -1,5 +1,5 @@
 Summary:	A clone of the Atari Missile Command
-Summary(pl):	Klon atarowskiej gry Missile Command
+Summary(pl.UTF-8):   Klon atarowskiej gry Missile Command
 Name:		missile
 Version:	1.0.1
 Release:	1
@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A clone of the Atari Missile Command.
 
-%description -l pl
+%description -l pl.UTF-8
 Klon atarowskiej gry Missile Command.
 
 %prep
