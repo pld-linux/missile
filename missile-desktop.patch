@@ -1,0 +1,7 @@
+--- missile-1.0.1/missile.desktop~	2003-04-21 18:09:34.000000000 +0200
++++ missile-1.0.1/missile.desktop	2010-05-11 17:03:42.812784836 +0200
+@@ -5,3 +5,4 @@
+ Icon=missile_icon_red.png
+ Terminal=0
+ Type=Application
++Categories=Application;Game;ArcadeGame;
